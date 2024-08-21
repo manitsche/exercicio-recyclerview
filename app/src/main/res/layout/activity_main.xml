@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".activity.MainActivity">
+
+    <TextView
+        android:text="Exercício RecyclerView"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Campos para cadastro -->
+    <EditText
+        android:id="@+id/editTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título do Compromisso"
+        android:importantForAutofill="no"
+        android:textColorHint="@color/black"
+        tools:ignore="HardcodedText,TextFields" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data"
+        android:importantForAutofill="no"
+        android:textColorHint="@color/black"
+        tools:ignore="HardcodedText,TextFields" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editHorario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Horário"
+        android:importantForAutofill="no"
+        android:textColorHint="@color/black"
+        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editLocal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Local"
+        android:importantForAutofill="no"
+        android:textColorHint="@color/black"
+        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <!-- Botão para adicionar -->
+    <Button
+        android:id="@+id/buttonAdicionar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Adicionar"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <!-- Espaçamento -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <!-- RecyclerView para listagem -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
